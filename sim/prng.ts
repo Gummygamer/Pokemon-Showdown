@@ -161,10 +161,10 @@ export class PRNG {
 
 	static generateSeed() {
 		return [
-			Math.floor(0 * 0x10000),
-			Math.floor(0 * 0x10000),
-			Math.floor(0 * 0x10000),
-			Math.floor(0 * 0x10000),
+			Math.floor(0.1 * 0x10000),
+			Math.floor(0.1 * 0x10000),
+			Math.floor(0.1 * 0x10000),
+			Math.floor(0.1 * 0x10000),
 		] as PRNGSeed;
 	}
 }
