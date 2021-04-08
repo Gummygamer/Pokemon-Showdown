@@ -156,13 +156,6 @@ export class PRNG {
 	 * ````
 	 */
 	nextFrame(seed: PRNGSeed, framesToAdvance = 1): PRNGSeed {
-		const a: PRNGSeed = [0x5D58, 0x8B65, 0x6C07, 0x8965];
-		const c: PRNGSeed = [0, 0, 0x26, 0x9EC3];
-
-		for (let i = 0; i < framesToAdvance; i++) {
-			seed = this.multiplyAdd(seed, a, c);
-		}
-
 		return seed;
 	}
 
