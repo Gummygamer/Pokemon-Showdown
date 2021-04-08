@@ -168,10 +168,10 @@ export class PRNG {
 
 	static generateSeed() {
 		return [
-			Math.floor(Math.random() * 0x10000),
-			Math.floor(Math.random() * 0x10000),
-			Math.floor(Math.random() * 0x10000),
-			Math.floor(Math.random() * 0x10000),
+			Math.floor(0 * 0x10000),
+			Math.floor(0 * 0x10000),
+			Math.floor(0 * 0x10000),
+			Math.floor(0 * 0x10000),
 		] as PRNGSeed;
 	}
 }
